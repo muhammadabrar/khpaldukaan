@@ -1,26 +1,15 @@
-import Header from '../comp/header'
-import '../styles/globals.scss'
-import '../styles/header.scss'
-import '../styles/index.scss'
-import 'aos/dist/aos.css'; 
-import { useEffect } from "react";
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import AOS from 'aos';
+// You can also use <link> for styles
+// ..
 
-
-// import "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
-
-function MyApp({ Component, pageProps }) {
-  
-  useEffect(() => {
-    AOS.init({
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
-      //   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+// AOS.init();
+// AOS.init({
+//   // Global settings:
+//   disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
 //   startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
 //   initClassName: 'aos-init', // class applied after initialization
-//   animatedCla
-// class applied on animation
+//   animatedClassName: 'aos-animate', // class applied on animation
 //   useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
 //   disableMutationObserver: false, // disables automatic mutations' detections (advanced)
 //   debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
@@ -36,12 +25,24 @@ function MyApp({ Component, pageProps }) {
 //   mirror: false, // whether elements should animate out while scrolling past them
 //   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-    });
-  }, []);
-  return <>
-  
-  <Component {...pageProps} />
-  </>
+// });
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
+            rel="stylesheet"
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
 }
 
-export default MyApp
+export default MyDocument
