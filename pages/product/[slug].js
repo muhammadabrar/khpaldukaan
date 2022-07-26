@@ -96,9 +96,9 @@ export default function ProductDetail() {
         <Link className="breadcrumb-link" style={{ color: "#bbbbbb" }} href="#">
           Home
         </Link>
-        <i class="bi bi-chevron-right"></i> <a href="#">products</a>{" "}
-        <i class="bi bi-chevron-right"></i> <a href="#">category</a>{" "}
-        <i class="bi bi-chevron-right"></i>{" "}
+        <i className="bi bi-chevron-right"></i> <a href="#">products</a>{" "}
+        <i className="bi bi-chevron-right"></i> <a href="#">category</a>{" "}
+        <i className="bi bi-chevron-right"></i>{" "}
         <a href="#" className="active">
           Sub_category
         </a>
