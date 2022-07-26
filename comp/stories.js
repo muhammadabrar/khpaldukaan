@@ -10,13 +10,13 @@ export default function Stories() {
     <div className="top3-storiess">
     <>
       <a href="#" className="stories-card " data-aos="fade-up" data-aos-delay={0}>
-      <Image src={shoes} className="stories-card-img" layout='fill'/>
+      <Image alt="" src={shoes} className="stories-card-img" layout='fill'/>
 
       </a>
     </>
     <>
       <a href="#" className="stories-card " data-aos="fade-up" data-aos-delay={100}>
-      <Image src={shoes1} className="stories-card-img" layout='responsive'/>
+      <Image alt="" src={shoes1} className="stories-card-img" layout='responsive'/>
 
 
       </a>
@@ -24,7 +24,7 @@ export default function Stories() {
   
     <>
       <a href='#' className="stories-card" data-aos="fade-up" data-aos-delay={200}>
-      <Image src={furnitures} layout='fill' className="stories-card-img" />
+      <Image alt="" src={furnitures} layout='fill' className="stories-card-img" />
       
       </a>
     </>

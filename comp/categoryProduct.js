@@ -150,6 +150,8 @@ export default function CategoryProducts() {
           {products?.map((item, index) => (
             <SwiperSlide className="stores-product-slider">
               <ProductCard
+          key={item.id}
+
                 id={item.id}
                 Title={item.Title}
                 price={item.price}

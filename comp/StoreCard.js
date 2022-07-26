@@ -6,11 +6,11 @@ import furnitures from "../public/images/furnitures.jpg";
 export default function StoreCard(props) {
   return (
     <div className="Store-card" data-aos="fade-up" data-aos-delay={props?.delay}>
-      <Image src={furnitures} className="store-image" layout="responsive" />
+      <Image alt="" src={furnitures} className="store-image" layout="responsive" />
       <div className="store-info">
         <div>
         <a href="#" className="store-id">
-          <Image src={shoes} className="store-dp" width={40} height={40} />
+          <Image alt="" src={shoes} className="store-dp" width={40} height={40} />
           <div className="store-title-wrap">
             <div>
             <h3 className="store-title">Digital Educational Resources</h3>
@@ -22,7 +22,7 @@ export default function StoreCard(props) {
         
         </div>
         <div className="store-action">
-            {!props?.stars == "false" ? <p className="store-stars">
+             <p className="store-stars">
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>
@@ -32,12 +32,10 @@ export default function StoreCard(props) {
               <small>(4.3)</small>
 
               
-            </p>:""}
-            {props.children}
-            <div style={{display: "flex"}}>
-            {props.button}
+            </p>
+            < >
         <button className="btn btn-store-follow">400 Follow</button>
-        </div>
+        </>
           </div>
 
       </div>

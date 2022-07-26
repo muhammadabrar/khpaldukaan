@@ -115,10 +115,10 @@ export default function ProductDetail() {
               >
                 <i className="bi bi-chevron-left"></i>
               </button>
-              <Image
+              <Image alt=""
                 src={images[activeSlide]}
                 className="product-image"
-                layout="responsive"
+             
               />
               <button
                 className="btn btn-img-nav right"
@@ -131,75 +131,74 @@ export default function ProductDetail() {
             <Swiper
               spaceBetween={10}
               navigation={true}
-              modules={[FreeMode, Navigation, Thumbs]}
-              thumbs={{ thumbsSwiper }}
+              
               className="mySwiper2"
             >
               <SwiperSlide>
-                <Image
+                <Image alt=""
                   src={shoes1}
                   className="product-image"
                   layout="responsive"
                 />
               </SwiperSlide>
               <SwiperSlide className="swiper-slide-active active">
-                <Image
+                <Image alt=""
                   src={shoes}
                   className="product-image"
                   layout="responsive"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <Image
+                <Image alt=""
                   src={shoes1}
                   className="product-image"
                   layout="responsive"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <Image
+                <Image alt=""
                   src={shoes1}
                   className="product-image"
                   layout="responsive"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <Image
+                <Image alt=""
                   src={shoes1}
                   className="product-image"
                   layout="responsive"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <Image
+                <Image alt=""
                   src={shoes1}
                   className="product-image"
                   layout="responsive"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <Image
+                <Image alt=""
                   src={shoes1}
                   className="product-image"
                   layout="responsive"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <Image
+                <Image alt=""
                   src={shoes1}
                   className="product-image"
                   layout="responsive"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <Image
+                <Image alt=""
                   src={shoes1}
                   className="product-image"
                   layout="responsive"
                 />
               </SwiperSlide>
               <SwiperSlide>
-                <Image
+                <Image alt=""
                   src={shoes1}
                   className="product-image"
                   layout="responsive"
@@ -209,7 +208,6 @@ export default function ProductDetail() {
           )}
           {!isMobile && (
             <Swiper
-              onSwiper={setThumbsSwiper}
               spaceBetween={10}
               slidesPerView={4}
               freeMode={true}
@@ -219,10 +217,11 @@ export default function ProductDetail() {
             >
               {images.map((image, index) => (
                 <SwiperSlide
+                  key={index}
                   className="product-image2"
                   onClick={() => setactiveSlide(index)}
                 >
-                  <Image
+                  <Image alt=""
                     src={image}
                     layout="responsive"
                     className={activeSlide == index && "active"}
@@ -355,6 +354,7 @@ export default function ProductDetail() {
                 <div className="related-product-wrap">
                 {products?.map((item, index) => (
           <ProductCard
+          key={item.id}
             id={item.id}
             Title={item.Title}
             price={item.price}

@@ -36,7 +36,8 @@ export default function LandingStores() {
           {categories?.map((item, index) => (
             <SwiperSlide className="stores-product-slider">
                 
-                <StoreCard delay={index * 100}/>
+          
+                <StoreCard key={index} delay={index * 100}/>
             </SwiperSlide>
           ))}
         </>

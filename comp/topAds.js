@@ -28,12 +28,12 @@ export default function TopAds() {
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
-          <a href="#"><Image src={banner1} layout="responsive" className="slider-img" />
+          <a href="#"><Image alt="" src={banner1} layout="responsive" className="slider-img" />
           </a></SwiperSlide>
         <SwiperSlide>
-        <a href="#"> <Image src={banner2} layout="responsive" className="slider-img" />
+        <a href="#"> <Image alt="" src={banner2} layout="responsive" className="slider-img" />
         </a> </SwiperSlide>
-        {/* <SwiperSlide><Image src={cover} layout="cover" className="slider-img" /></SwiperSlide> */}
+        {/* <SwiperSlide><Image alt="" src={cover} layout="cover" className="slider-img" /></SwiperSlide> */}
       </Swiper>
     </div>
   );

@@ -11,7 +11,7 @@ export default function ProductCard(props) {
     >
       <div className="product-top">
         <a href={`product/Tomatoes-Tear-Drop`}>
-          <Image src={props?.image} className="product-image" layout="responsive" />
+          <Image alt="" src={props?.image} className="product-image" layout="responsive" />
         </a>
         <div className="product-action">
           <>

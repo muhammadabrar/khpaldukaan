@@ -99,17 +99,17 @@ const Promotion = () => {
         <div class="slider" ref={listRef} onScrollLeft={e => handleTouchMove(e)}>
           <div class="slider-item" ref={Ref1}>
             <a href="#">
-              <Image src={banner1} layout="responsive" className="slider-img" />
+              <Image alt="" src={banner1} layout="responsive" className="slider-img" />
             </a>
           </div>
           <div class="slider-item " ref={Ref2}>
             <a href="#">
-              <Image src={banner2} layout="responsive" className="slider-img" />
+              <Image alt="" src={banner2} layout="responsive" className="slider-img" />
             </a>
           </div>
           <div class="slider-item " ref={Ref3}>
             <a href="#">
-              <Image src={banner1} layout="responsive" className="slider-img" />
+              <Image alt="" src={banner1} layout="responsive" className="slider-img" />
             </a>
           </div>
          

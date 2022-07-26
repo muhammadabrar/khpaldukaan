@@ -109,6 +109,7 @@ export default function ProductsGrid() {
       <div className="ProductsGrid">
         {products?.map((item, index) => (
           <ProductCard
+          key={item.id}
             id={item.id}
             Title={item.Title}
             price={item.price}
