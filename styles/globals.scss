@@ -12,10 +12,6 @@
 
 
 
-a {
-  text-decoration: none;
-  color: #000;
-}
 
 ul {
   list-style: none;
@@ -251,7 +247,9 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-
+a{
+  text-decoration: none;
+}
 
 a:focus {
   outline: 5px auto -webkit-focus-ring-color;

@@ -17,8 +17,6 @@ const Header = () => {
     setwidth(window.innerWidth);
     // setHeight(window.innerHeight);
 }
-
-
 useEffect(() => {
   setwidth(window.innerWidth);
 
@@ -45,7 +43,7 @@ var isDropsearchBar = width < 1000;
         </div>
       </div>
       <>
-        <div className="container">
+        <div >
           <div className="header">
             <a herf="/" className="logo">
               Khpal<span>Dukaan </span>

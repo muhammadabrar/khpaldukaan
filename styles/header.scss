@@ -44,8 +44,11 @@ header{
     /* justify-content: space-between; */
     align-items: center;
     position: -webkit-sticky;
+    padding: 0 1rem;
     column-gap: 10px;
     position: sticky;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 10px 0px;
+
     top: 0;
 }
 

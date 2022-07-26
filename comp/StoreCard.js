@@ -8,7 +8,7 @@ export default function StoreCard(props) {
     <div className="Store-card" data-aos="fade-up" data-aos-delay={props?.delay}>
       <Image src={furnitures} className="store-image" layout="responsive" />
       <div className="store-info">
-        
+        <div>
         <a href="#" className="store-id">
           <Image src={shoes} className="store-dp" width={40} height={40} />
           <div className="store-title-wrap">
@@ -17,9 +17,12 @@ export default function StoreCard(props) {
             <p className="store-deparment">Shoes</p>
             </div>
           </div>
+          
         </a>
+        
+        </div>
         <div className="store-action">
-            <p className="store-stars">
+            {!props?.stars == "false" ? <p className="store-stars">
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>
@@ -29,9 +32,12 @@ export default function StoreCard(props) {
               <small>(4.3)</small>
 
               
-            </p>
+            </p>:""}
+            {props.children}
+            <div style={{display: "flex"}}>
+            {props.button}
         <button className="btn btn-store-follow">400 Follow</button>
-            
+        </div>
           </div>
 
       </div>
