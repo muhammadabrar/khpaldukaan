@@ -105,7 +105,6 @@ export default function ProductsGrid() {
       ]);
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Top Seller</h1>
       <div className="ProductsGrid">
         {products?.map((item, index) => (
           <ProductCard

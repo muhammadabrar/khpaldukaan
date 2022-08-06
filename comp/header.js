@@ -1,8 +1,9 @@
 // import a from 'next/a';
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 // import useWindowDimensions from "./useWindowDimensions";
-
+import { useRouter } from 'next/router'
 const Header = () => {
+  const router = useRouter()
   const [IssearchResults, setIssearchResults] = useState(false);
   const [IsSelectCat, setIsSelectCat] = useState(false);
   const [selectedCat, setselectedCat] = useState("All");
@@ -24,10 +25,14 @@ useEffect(() => {
     return () => window.removeEventListener("resize", updateDimensions);
 }, []);
 
+function search() {
+  router.push('result/?sq=10', undefined, { shallow: true })
+  
+}
 var isDropsearchBar = width < 1000;
   return (
     <>
-      <div className="navbar">
+      {/* <div className="navbar">
         <div className="container">
           <div className="navs">
             <a herf="#" className="nav-as">
@@ -41,20 +46,15 @@ var isDropsearchBar = width < 1000;
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
       <>
-        <div >
-          <div className="header">
-            <a herf="/" className="logo">
+        <div className="header">
+          <div className="header-wrap">
+            <a href="/" className="logo">
               Khpal<span>Dukaan </span>
             </a>
             {!isDropsearchBar && <div className="search-bar">
-              {/* <select className='select-cat'>
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes Mercedes</option>
-              <option value="audi">Audi</option>
-            </select> */}
+    
               <div
                 className="select-cat"
                 ref={ref}
@@ -107,7 +107,7 @@ var isDropsearchBar = width < 1000;
                 placeholder="search..."
                 onClick={() => setIssearchResults(!IssearchResults)}
               />
-              <button className="search-submit-btn ">
+              <button className="search-submit-btn " onClick={()=> search()}>
                 {/* <Search color="#ffffff" width="24px" height="24px" /> */}
                 <i className="bi bi-search"></i>
               </button>
@@ -167,13 +167,8 @@ var isDropsearchBar = width < 1000;
               </>
             </div>
           </div>
-          {isDropsearchBar && <div className="search-bar" style={{marginBottom: "1rem"}}>
-              {/* <select className='select-cat'>
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes Mercedes</option>
-              <option value="audi">Audi</option>
-            </select> */}
+          {/* isDropsearchBar && <div className="search-bar" style={{marginBottom: "1rem"}}>
+             
               <div
                 className="select-cat"
                 ref={ref}
@@ -227,7 +222,7 @@ var isDropsearchBar = width < 1000;
                 onClick={() => setIssearchResults(!IssearchResults)}
               />
               <button className="search-submit-btn ">
-                {/* <Search color="#ffffff" width="24px" height="24px" /> */}
+                
                 <i className="bi bi-search"></i>
               </button>
               {IssearchResults && (
@@ -260,8 +255,9 @@ var isDropsearchBar = width < 1000;
                   </div>
                 </>
               )}
-            </div>}
+            </div>*/}
         </div>
+        {/* <Outlet/> */}
       </>
     </>
   );

@@ -21,20 +21,22 @@ export default function Home() {
   console.log(banner);
   return (
     <>
-      <Header />
       {/* <Promotion/> */}
+<div className="content ">
+
+      <div className="container">
       <TopAds />
       <Stories/>
-
-      <div className="">
-
         <CategoriesSlider/>
         <LandingStores/>
         <CategoryProducts/>
         <CategoryProducts/>
         <CategoryProducts/>
+      <h1 style={{ textAlign: "center" }}>Top Seller</h1>
+
         <ProductsGrid/>
         {/* <ProductCard/> */}
+      </div>
       </div>
     </>
   );

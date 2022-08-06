@@ -7,12 +7,21 @@
   padding: 0;
   --color-green: #6d8f21;
   --color-orange: #fe8100;
-
+  --background: #F7F7F7
 }
-
-
-
-
+.slider{
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+.content{
+  background-color: var(--background);
+}
+.text-right{
+  text-align: end;
+}
+// .justify-content-between{
+//   justify-content: space-between;
+// }
 ul {
   list-style: none;
 }
@@ -35,6 +44,9 @@ body {
 }
 .justify-content-between{
   justify-content: space-between;
+}
+.align-item-center{
+  align-items: center;
 }
 
 article,

@@ -9,7 +9,7 @@ export default function StoreCard(props) {
       <Image alt="" src={furnitures} className="store-image" layout="responsive" />
       <div className="store-info">
         <div>
-        <a href="#" className="store-id">
+        <a href="/store/Digital-Educational-Resources" className="store-id">
           <Image alt="" src={shoes} className="store-dp" width={40} height={40} />
           <div className="store-title-wrap">
             <div>

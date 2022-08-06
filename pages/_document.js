@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import AOS from 'aos';
+import Header from '../comp/header';
 // You can also use <link> for styles
 // ..
 

@@ -26,6 +26,7 @@ export default function TopAds() {
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        className="slider"
       >
         <SwiperSlide>
           <a href="#"><Image alt="" src={banner1} layout="responsive" className="slider-img" />
