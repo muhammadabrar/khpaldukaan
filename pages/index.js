@@ -29,9 +29,9 @@ export default function Home() {
       <Stories/>
         <CategoriesSlider/>
         <LandingStores/>
-        <CategoryProducts/>
-        <CategoryProducts/>
-        <CategoryProducts/>
+        <CategoryProducts h="shoes"/>
+        <CategoryProducts h="mobile"/>
+        <CategoryProducts h="shirts"/>
       <h1 style={{ textAlign: "center" }}>Top Seller</h1>
 
         <ProductsGrid/>

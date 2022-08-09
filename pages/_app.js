@@ -1,10 +1,11 @@
 import Header from '../comp/header'
+// import '../styles/bootstrap.min.css';
+
 import '../styles/globals.scss'
 import '../styles/header.scss'
 import '../styles/index.scss'
 import 'aos/dist/aos.css'; 
 import '../styles/globals.scss'
-
 import { useEffect } from "react";
 import AOS from 'aos';
 

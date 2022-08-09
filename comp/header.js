@@ -2,6 +2,9 @@
 import React, { useState, useRef, useLayoutEffect, useEffect } from "react";
 // import useWindowDimensions from "./useWindowDimensions";
 import { useRouter } from 'next/router'
+// import Link from 'next/link';
+import Link from "next/link";
+
 const Header = () => {
   const router = useRouter()
   const [IssearchResults, setIssearchResults] = useState(false);
@@ -154,16 +157,16 @@ var isDropsearchBar = width < 1000;
                   <p className="tooltip">Wishlist</p>
 
                 </button>
-                <button className="btn btn-icon">
+                <a href="/cart" className="btn btn-icon">
                   <i className="bi bi-cart"></i>
                   <p className="tooltip">Cart</p>
 
-                </button>
-                <button className="btn btn-icon">
+                </a>
+                <a href="/cart" className="btn btn-icon">
                   <i className="bi bi-person-circle"></i>
-                  <p className="tooltip">Account</p>
+                  <span className="tooltip">Account</span>
 
-                </button>
+                </a>
               </>
             </div>
           </div>

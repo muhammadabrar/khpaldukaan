@@ -21,7 +21,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 import ProductCard from "./ProductCard";
-export default function CategoryProducts() {
+export default function CategoryProducts(props) {
   const [categories, setcategories] = useState([
     0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
   ]);
@@ -119,7 +119,7 @@ export default function CategoryProducts() {
   ]);
   return (
     <div className="store-slider">
-      <h1>Shoes</h1>
+      <h1>{props.h}</h1>
       <Swiper
         modules={[Navigation]}
         slidesPerView={"auto"}
